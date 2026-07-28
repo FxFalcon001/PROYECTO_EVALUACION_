@@ -1,14 +1,431 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=z, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxTime | Luxury Watch & Jewelry Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <li><a href="catalogo.html"></a></li>
+    
 </head>
 <body>
-    <H1>HOLI, SOMOS EL MEJOR GRUPO :D</H1>
-    <p>MI LIBRO LUNA DE PLUTON</p>
-    <p>QUE PASA MI REY</p>
-    <p>Hola, ¿cómo estás?</p>
+
+    <!-- ENCABEZADO / NAVBAR NATIVO ESTILO CRM JEWELERS -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">❖</span> LuxTime
+        </div>
+<nav>
+    <ul class="nav-links">
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="index.html#destacados">DESTACADOS</a></li>
+        
+        <!-- ELEMENTO CON DESPLEGABLE -->
+        <li class="dropdown">
+            <a href="catalogo.html" class="dropbtn">CATÁLOGO (20) ▾</a>
+            <div class="dropdown-content">
+                <a href="catalogo.html" class="btn-dropdown">VER COLECCIÓN</a>
+                <a href="catalogo.html">Ver Disponibles</a>
+                <a href="catalogo.html">Agotados</a>
+            </div>
+        </li>
+
+        <li><a href="index.html#historia">HISTORIA</a></li>
+        <li><a href="index.html#contacto">CONTACTO</a></li>
+    </ul>
+</nav>
+        </nav>
+        <div class="nav-icons">
+            <span>🔍</span>
+            <span>👤</span>
+            <span>🛒 (0)</span>
+        </div>
+    </header>
+
+    <!-- BANNER PRINCIPAL (CARRUSEL CSS CON ANIMACIÓN Y ESTILO CRM) -->
+    <section class="hero-slider">
+        <div class="slide slide-1">
+            <div class="hero-overlay">
+                <span class="sub-title">LuxTime Boutique</span>
+                <h1>Luxury Watch & Jewelry</h1>
+                <p>Curaduría exclusiva de piezas de alta gama inspiradas en los estándares globales de la horología.</p>
+                <a href="#catalogo" class="btn-primary">VER COLECCIÓN</a>
+            </div>
+        </div>
+        <div class="slide slide-2">
+            <div class="hero-overlay">
+                <span class="sub-title">Ediciones Limitadas</span>
+                <h1>Precision & Elegance</h1>
+                <p>Modelos codiciados e inaccesibles del mercado mundial al alcance de coleccionistas exigentes.</p>
+                <a href="#catalogo" class="btn-primary">EXPLORAR CATALOGO</a>
+            </div>
+        </div>
+        <div class="slide slide-3">
+            <div class="hero-overlay">
+                <span class="sub-title">Alta Horología</span>
+                <h1>Garantía & Autenticidad</h1>
+                <p>Todas nuestras piezas cuentan con certificado oficial e inspección técnica experta.</p>
+                <a href="#contacto" class="btn-primary">AGENDAR CITA</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: 6 RELOJES DESTACADOS (Requerimiento Home) -->
+    <section id="destacados" class="container">
+        <h2 class="section-title">Relojes Destacados</h2>
+        <div class="grid-6">
+            <!-- 1 -->
+            <div class="card">
+                <div class="card-img"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Reloj 1"></div>
+                <h3>Royal Skeleton Gold</h3>
+                <p class="price">$24,500 USD</p>
+                <div class="rating">★★★★★</div>
+                <a href="#detalle-producto" class="btn-card">Ver detalles</a>
+            </div>
+            <!-- 2 -->
+            <div class="card">
+                <div class="card-img"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=500" alt="Reloj 2"></div>
+                <h3>Nautilus Chrono Black</h3>
+                <p class="price">$18,200 USD</p>
+                <div class="rating">★★★★★</div>
+                <a href="#detalle-producto" class="btn-card">Ver detalles</a>
+            </div>
+            <!-- 3 -->
+            <div class="card">
+                <div class="card-img"><img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=500" alt="Reloj 3"></div>
+                <h3>Aquaracer Automatic</h3>
+                <p class="price">$12,900 USD</p>
+                <div class="rating">★★★★☆</div>
+                <a href="#detalle-producto" class="btn-card">Ver detalles</a>
+            </div>
+            <!-- 4 -->
+            <div class="card">
+                <div class="card-img"><img src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=500" alt="Reloj 4"></div>
+                <h3>GMT Master Rose</h3>
+                <p class="price">$31,000 USD</p>
+                <div class="rating">★★★★★</div>
+                <a href="#detalle-producto" class="btn-card">Ver detalles</a>
+            </div>
+            <!-- 5 -->
+            <div class="card">
+                <div class="card-img"><img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=500" alt="Reloj 5"></div>
+                <h3>Classic Heritage 1968</h3>
+                <p class="price">$15,400 USD</p>
+                <div class="rating">★★★★★</div>
+                <a href="#detalle-producto" class="btn-card">Ver detalles</a>
+            </div>
+            <!-- 6 -->
+            <div class="card">
+                <div class="card-img"><img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=500" alt="Reloj 6"></div>
+                <h3>Submariner Titanium</h3>
+                <p class="price">$22,800 USD</p>
+                <div class="rating">★★★★☆</div>
+                <a href="#detalle-producto" class="btn-card">Ver detalles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: CATÁLOGO COMPLETO (20 RELOJES CON ETIQUETAS STOCK/AGOTADO) -->
+    <section id="catalogo" class="container bg-light">
+        <h2 class="section-title">Catálogo Completo de Inventario (20 Modelos)</h2>
+        <div class="grid-catalog">
+            <!-- 1 -->
+            <div class="catalog-card">
+                <span class="badge stock">En Stock</span>
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" alt="Model 1">
+                <h4>Daytona Platinum</h4>
+                <p class="price">$35,000 USD</p>
+            </div>
+            <!-- 2 -->
+            <div class="catalog-card">
+                <span class="badge stock">En Stock</span>
+                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400" alt="Model 2">
+                <h4>Overseas Dual Time</h4>
+                <p class="price">$28,400 USD</p>
+            </div>
+            <!-- 3 -->
+            <div class="catalog-card">
+                <span class="badge soldout">Agotado</span>
+                <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=400" alt="Model 3">
+                <h4>Speedmaster Moonwatch</h4>
+                <p class="price">$9,600 USD</p>
+            </div>
+            <!-- 4 -->
+            <div class="catalog-card">
+                <span class="badge stock">En Stock</span>
+                <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=400" alt="Model 4">
+                <h4>Royal Oak Offshore</h4>
+                <p class="price">$42,000 USD</p>
+            </div>
+            <!-- 5 -->
+            <div class="catalog-card">
+                <span class="badge stock">En Stock</span>
+                <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400" alt="Model 5">
+                <h4>Big Bang Unico</h4>
+                <p class="price">$19,500 USD</p>
+            </div>
+            <!-- 6 -->
+            <div class="catalog-card">
+                <span class="badge soldout">Agotado</span>
+                <img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=400" alt="Model 6">
+                <h4>Santos de Cartier</h4>
+                <p class="price">$11,200 USD</p>
+            </div>
+            <!-- 7 -->
+            <div class="catalog-card">
+                <span class="badge stock">En Stock</span>
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" alt="Model 7">
+                <h4>Luminor Marina</h4>
+                <p class="price">$8,900 USD</p>
+            </div>
+            <!-- 8 -->
+            <div class="catalog-card">
+                <span class="badge stock">En Stock</span>
+                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400" alt="Model 8">
+                <h4>Monaco Calibre 11</h4>
+                <p class="price">$7,800 USD</p>
+            </div>
+            <!-- 9 -->
+            <div class="catalog-card">
+                <span class="badge stock">En Stock</span>
+                <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=400" alt="Model 9">
+                <h4>Navitimer B01</h4>
+                <p class="price">$10,100 USD</p>
+            </div>
+            <!-- 10 -->
+            <div class="catalog-card">
+                <span class="badge soldout">Agotado</span>
+                <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=400" alt="Model 10">
+                <h4>Fifty Fathoms</h4>
+                <p class="price">$14,800 USD</p>
+            </div>
+            <!-- 11 -->
+            <div class="catalog-card">
+                <span class="badge stock">En Stock</span>
+                <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400" alt="Model 11">
+                <h4>Reverso Tribute</h4>
+                <p class="price">$13,200 USD</p>
+            </div>
+            <!-- 12 -->
+            <div class="catalog-card">
+                <span class="badge stock">En Stock</span>
+                <img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=400" alt="Model 12">
+                <h4>Aikon Automatic</h4>
+                <p class="price">$3,400 USD</p>
+            </div>
+            <!-- 13 -->
+            <div class="catalog-card">
+                <span class="badge stock">En Stock</span>
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" alt="Model 13">
+                <h4>Defy Skyline</h4>
+                <p class="price">$9,100 USD</p>
+            </div>
+            <!-- 14 -->
+            <div class="catalog-card">
+                <span class="badge soldout">Agotado</span>
+                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400" alt="Model 14">
+                <h4>BR 03-92 Diver</h4>
+                <p class="price">$4,200 USD</p>
+            </div>
+            <!-- 15 -->
+            <div class="catalog-card">
+                <span class="badge stock">En Stock</span>
+                <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=400" alt="Model 15">
+                <h4>Frederique Constant Slim</h4>
+                <p class="price">$2,900 USD</p>
+            </div>
+            <!-- 16 -->
+            <div class="catalog-card">
+                <span class="badge stock">En Stock</span>
+                <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=400" alt="Model 16">
+                <h4>Prospex LX Master</h4>
+                <p class="price">$5,100 USD</p>
+            </div>
+            <!-- 17 -->
+            <div class="catalog-card">
+                <span class="badge stock">En Stock</span>
+                <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400" alt="Model 17">
+                <h4>Tissot PRX Chrono</h4>
+                <p class="price">$1,850 USD</p>
+            </div>
+            <!-- 18 -->
+            <div class="catalog-card">
+                <span class="badge soldout">Agotado</span>
+                <img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=400" alt="Model 18">
+                <h4>Longines Legend Diver</h4>
+                <p class="price">$3,100 USD</p>
+            </div>
+            <!-- 19 -->
+            <div class="catalog-card">
+                <span class="badge stock">En Stock</span>
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" alt="Model 19">
+                <h4>Oris Aquis Date</h4>
+                <p class="price">$2,400 USD</p>
+            </div>
+            <!-- 20 -->
+            <div class="catalog-card">
+                <span class="badge stock">En Stock</span>
+                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400" alt="Model 20">
+                <h4>Hamilton Khaki Field</h4>
+                <p class="price">$1,200 USD</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: DETALLE DEL PRODUCTO CON ZOOM AL HOVER Y SIMULACIONES -->
+    <section id="detalle-producto" class="container">
+        <h2 class="section-title">Detalle del Producto (Vista Ampliada)</h2>
+        <div class="product-detail-wrapper">
+            <div class="zoom-container">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800" alt="Reloj Zoom" class="zoom-img">
+            </div>
+            <div class="product-info">
+                <h3>Royal Skeleton Gold Limited Edition</h3>
+                <p class="product-price">$24,500 USD</p>
+                <div class="specs">
+                    <p><strong>Materiales:</strong> Oro rosa de 18k, Cristal de Zafiro antirreflejos.</p>
+                    <p><strong>Tamaño de Caja:</strong> 41 mm</p>
+                    <p><strong>Peso:</strong> 185 gramos</p>
+                </div>
+                
+                <!-- Opciones simuladas de personalización -->
+                <div class="customizer">
+                    <label>Grabado Personalizado (Simulado):</label>
+                    <input type="text" placeholder="Ej: A.F.T. - 2026">
+
+                    <label>Cambio de Correa:</label>
+                    <select>
+                        <option>Cuero de Cocodrilo Negro</option>
+                        <option>Brazalete Oro Rosa</option>
+                        <option>Caucho Deportivo Militar</option>
+                    </select>
+                </div>
+                <button class="btn-primary">AÑADIR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Carrusel horizontal simulado para productos relacionados -->
+        <h3 class="sub-section-title">Productos Relacionados</h3>
+        <div class="horizontal-scroll">
+            <div class="related-card"><img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=300" alt="R1"><p>Submariner</p></div>
+            <div class="related-card"><img src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=300" alt="R2"><p>Daytona</p></div>
+            <div class="related-card"><img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=300" alt="R3"><p>Royal Oak</p></div>
+            <div class="related-card"><img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=300" alt="R4"><p>Nautilus</p></div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: HISTORIA, LÍNEA DE TIEMPO Y GALERÍA MOSAICO -->
+    <section id="historia" class="container bg-light">
+        <h2 class="section-title">Historia & Trayectoria Corporativa</h2>
+        
+        <div class="timeline-container">
+            <div class="time-box">
+                <span class="year">2010</span>
+                <h4>Origen & Fundación</h4>
+                <p>Nace la boutique ofreciendo piezas exclusivas en el mercado internacional.</p>
+            </div>
+            <div class="time-box">
+                <span class="year">2016</span>
+                <h4>Certificaciones</h4>
+                <p>Acreditación de inspección técnica oficial de autenticidad en Suiza.</p>
+            </div>
+            <div class="time-box">
+                <span class="year">2021</span>
+                <h4>Expansión de Sedes</h4>
+                <p>Apertura de showrooms privados en Bogotá y Miami.</p>
+            </div>
+            <div class="time-box">
+                <span class="year">2026</span>
+                <h4>Innovación Digital</h4>
+                <p>Lanzamiento de plataforma con experiencia interactiva para coleccionistas.</p>
+            </div>
+        </div>
+
+        <!-- Galería visual estilo mosaico -->
+        <h3 class="sub-section-title">Galería Visual Histórica</h3>
+        <div class="mosaic-gallery">
+            <div class="mosaic-item item-large"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600" alt="Taller"></div>
+            <div class="mosaic-item"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400" alt="Relojero"></div>
+            <div class="mosaic-item"><img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400" alt="Detalle"></div>
+            <div class="mosaic-item item-wide"><img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=600" alt="Sede"></div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: FORMULARIO DE CONTACTO CON VALIDACIÓN CSS -->
+    <section id="contacto" class="container">
+        <h2 class="section-title">Formulario de Contacto Directo</h2>
+        <div class="contact-wrapper">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo *</label>
+                    <input type="text" id="nombre" required placeholder="Ej: Daniel Figueroa">
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico *</label>
+                    <input type="email" id="correo" required placeholder="ejemplo@correo.com">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono *</label>
+                    <input type="tel" id="telefono" required placeholder="+57 300 123 4567">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" rows="4" required placeholder="Escribe tu consulta sobre disponibilidad o citas..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary">ENVIAR MENSAJE</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Información Adicional</h3>
+                <p><strong>Correo Directo:</strong> contacto@luxtime.com</p>
+                <p><strong>Teléfono Directo:</strong> +57 (601) 800-5898</p>
+                <p><strong>Sedes:</strong> San Gil • Bogotá • Miami</p>
+                <div class="social-links">
+                    <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER EXIGIDO (MAQUETADO ESTRICTAMENTE CON FLEXBOX) -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-item">
+                <strong>LuxTime</strong>
+            </div>
+            <div class="footer-item">
+                © 2026 LuxTime Timepieces. Todos los derechos reservados.
+            </div>
+            <div class="footer-item">
+                Contacto: <a href="mailto:info@luxtime.com">info@luxtime.com</a>
+            </div>
+            <div class="footer-item">
+                Desarrollado por: <a href="#">Equipo Dev LuxTime</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
+/* ESTILO ENCABEZADO EXCLUSIVO PÁGINA CATÁLOGO */
+.catalog-hero {
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+    padding: 3rem 5%;
+}
+
+.catalog-hero h1 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.catalog-hero p {
+    color: #e63946;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
