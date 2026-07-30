@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LuxTime | Luxury Watch & Jewelry Boutique</title>
     <link rel="stylesheet" href="style.css">
-    <li><a href="catalogo.html"></a></li>
     
 </head>
 <body>
@@ -30,8 +29,8 @@
             </div>
         </li>
 
-        <li><a href="index.html#historia">HISTORIA</a></li>
-        <li><a href="index.html#contacto">CONTACTO</a></li>
+        <li><a href="historia.html">HISTORIA</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
     </ul>
 </nav>
         </nav>
@@ -42,33 +41,52 @@
         </div>
     </header>
 
-    <!-- BANNER PRINCIPAL (CARRUSEL CSS CON ANIMACIÓN Y ESTILO CRM) -->
-    <section class="hero-slider">
-        <div class="slide slide-1">
-            <div class="hero-overlay">
-                <span class="sub-title">LuxTime Boutique</span>
-                <h1>Luxury Watch & Jewelry</h1>
-                <p>Curaduría exclusiva de piezas de alta gama inspiradas en los estándares globales de la horología.</p>
-                <a href="#catalogo" class="btn-primary">VER COLECCIÓN</a>
+   <!-- SECCIÓN CARRUSEL HERO PRINCIPAL -->
+<section class="hero-carousel">
+    <div class="carousel-container">
+        
+        <!-- Diapositiva 1: Reloj Clásico Automático de Lujo -->
+        <div class="carousel-slide active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1524805444758-089113d48a6d?q=80&w=1600&auto=format&fit=crop');">
+            <div class="hero-content">
+                <span class="hero-subtitle">EDICIONES LIMITADAS</span>
+                <h1 class="hero-title">PRECISION & ELEGANCE</h1>
+                <p class="hero-description">Modelos codiciados e inaccesibles del mercado mundial al alcance de coleccionistas exigentes.</p>
+                <a href="catalogo.html" class="btn-hero">EXPLORAR CATÁLOGO</a>
             </div>
         </div>
-        <div class="slide slide-2">
-            <div class="hero-overlay">
-                <span class="sub-title">Ediciones Limitadas</span>
-                <h1>Precision & Elegance</h1>
-                <p>Modelos codiciados e inaccesibles del mercado mundial al alcance de coleccionistas exigentes.</p>
-                <a href="#catalogo" class="btn-primary">EXPLORAR CATALOGO</a>
+
+        <!-- Diapositiva 2: Cronógrafo Suizo Deportivo -->
+        <div class="carousel-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1547996160-81dfa63595aa?q=80&w=1600&auto=format&fit=crop');">
+            <div class="hero-content">
+                <span class="hero-subtitle">MAESTRÍA SUIZA</span>
+                <h1 class="hero-title">CRAFTED FOR GREATNESS</h1>
+                <p class="hero-description">Cronógrafos legendarios probados en las condiciones más extremas del planeta.</p>
+                <a href="catalogo.html?filtro=stock" class="btn-hero">VER DISPONIBLES</a>
             </div>
         </div>
-        <div class="slide slide-3">
-            <div class="hero-overlay">
-                <span class="sub-title">Alta Horología</span>
-                <h1>Garantía & Autenticidad</h1>
-                <p>Todas nuestras piezas cuentan con certificado oficial e inspección técnica experta.</p>
-                <a href="#contacto" class="btn-primary">AGENDAR CITA</a>
-            </div>
-        </div>
-    </section>
+
+        <!-- Diapositiva 3: Alta Horología de Colección -->
+<div class="carousel-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('./PATEK\ CARRUSEL.png'); background-size: contain; background-repeat: no-repeat; background-position: center;">
+    <div class="hero-content">
+        <span class="hero-subtitle">INVERSIÓN Y PRESTIGIO</span>
+        <h1 class="hero-title">TIMELESS SOPHISTICATION</h1>
+        <p class="hero-description">Piezas de colección certificadas con la garantía oficial de autenticidad LuxTime.</p>
+        <a href="catalogo.html" class="btn-hero">CONOCE LA COLECCIÓN</a>
+    </div>
+</div>
+    </div>
+
+    <!-- Controles de Navegación del Carrusel -->
+    <button class="carousel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-control next" onclick="moveSlide(1)">&#10095;</button>
+
+    <!-- Indicadores (Puntos abajo) -->
+    <div class="carousel-dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+</section>
 
     <!-- SECCIÓN: 6 RELOJES DESTACADOS (Requerimiento Home) -->
     <section id="destacados" class="container">
@@ -80,7 +98,7 @@
                 <h3>Royal Skeleton Gold</h3>
                 <p class="price">$24,500 USD</p>
                 <div class="rating">★★★★★</div>
-                <a href="#detalle-producto" class="btn-card">Ver detalles</a>
+                <a href="catalogo.html" class="btn-card">Ver detalles</a>
             </div>
             <!-- 2 -->
             <div class="card">
@@ -88,7 +106,7 @@
                 <h3>Nautilus Chrono Black</h3>
                 <p class="price">$18,200 USD</p>
                 <div class="rating">★★★★★</div>
-                <a href="#detalle-producto" class="btn-card">Ver detalles</a>
+                <a href="catalogo.html" class="btn-card">Ver detalles</a>
             </div>
             <!-- 3 -->
             <div class="card">
@@ -96,7 +114,7 @@
                 <h3>Aquaracer Automatic</h3>
                 <p class="price">$12,900 USD</p>
                 <div class="rating">★★★★☆</div>
-                <a href="#detalle-producto" class="btn-card">Ver detalles</a>
+                <a href="catalogo.html" class="btn-card">Ver detalles</a>
             </div>
             <!-- 4 -->
             <div class="card">
@@ -104,7 +122,7 @@
                 <h3>GMT Master Rose</h3>
                 <p class="price">$31,000 USD</p>
                 <div class="rating">★★★★★</div>
-                <a href="#detalle-producto" class="btn-card">Ver detalles</a>
+                <a href="catalogo.html" class="btn-card">Ver detalles</a>
             </div>
             <!-- 5 -->
             <div class="card">
@@ -112,7 +130,7 @@
                 <h3>Classic Heritage 1968</h3>
                 <p class="price">$15,400 USD</p>
                 <div class="rating">★★★★★</div>
-                <a href="#detalle-producto" class="btn-card">Ver detalles</a>
+                <a href="catalogo.html" class="btn-card">Ver detalles</a>
             </div>
             <!-- 6 -->
             <div class="card">
@@ -120,7 +138,7 @@
                 <h3>Submariner Titanium</h3>
                 <p class="price">$22,800 USD</p>
                 <div class="rating">★★★★☆</div>
-                <a href="#detalle-producto" class="btn-card">Ver detalles</a>
+               <a href="catalogo.html" class="btn-card">Ver detalles</a>
             </div>
         </div>
     </section>
@@ -263,169 +281,80 @@
                 <p class="price">$2,400 USD</p>
             </div>
             <!-- 20 -->
-            <div class="catalog-card">
-                <span class="badge stock">En Stock</span>
-                <img src="Hamilton Khaki Field.png" alt="Model 20">
-                <h4>Hamilton Khaki Field</h4>
-                <p class="price">$1,200 USD</p>
-            </div>
+            <!-- 20 -->
+<!-- 20 -->
+<div class="catalog-card">
+    <span class="badge stock">En Stock</span>
+    <img src="Hamilton Khaki Field.png" alt="Model 20">
+    <h4>Hamilton Khaki Field</h4>
+    <p class="price">$1,200 USD</p>
+    <a href="#modal-hamilton" class="btn-card">Ver Detalle</a>
+</div>
         </div>
     </section>
 
-    <!-- SECCIÓN: DETALLE DEL PRODUCTO CON ZOOM AL HOVER Y SIMULACIONES -->
-    <section id="detalle-producto" class="container">
-        <h2 class="section-title">Detalle del Producto (Vista Ampliada)</h2>
-        <div class="product-detail-wrapper">
-            <div class="zoom-container">
-                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800" alt="Reloj Zoom" class="zoom-img">
-            </div>
-            <div class="product-info">
-                <h3>Royal Skeleton Gold Limited Edition</h3>
-                <p class="product-price">$24,500 USD</p>
-                <div class="specs">
-                    <p><strong>Materiales:</strong> Oro rosa de 18k, Cristal de Zafiro antirreflejos.</p>
-                    <p><strong>Tamaño de Caja:</strong> 41 mm</p>
-                    <p><strong>Peso:</strong> 185 gramos</p>
-                </div>
-                
-                <!-- Opciones simuladas de personalización -->
-                <div class="customizer">
-                    <label>Grabado Personalizado (Simulado):</label>
-                    <input type="text" placeholder="Ej: A.F.T. - 2026">
+    <script>
+    let slideIndex = 0;
+    let autoSlideTimer = null;
 
-                    <label>Cambio de Correa:</label>
-                    <select>
-                        <option>Cuero de Cocodrilo Negro</option>
-                        <option>Brazalete Oro Rosa</option>
-                        <option>Caucho Deportivo Militar</option>
-                    </select>
-                </div>
-                <button class="btn-primary">AÑADIR AL CARRITO</button>
-            </div>
-        </div>
+    function showSlide(index) {
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.dot');
 
-        <!-- Carrusel horizontal simulado para productos relacionados -->
-        <h3 class="sub-section-title">Productos Relacionados</h3>
-        <div class="horizontal-scroll">
-            <div class="related-card"><img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=300" alt="R1"><p>Submariner</p></div>
-            <div class="related-card"><img src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=300" alt="R2"><p>Daytona</p></div>
-            <div class="related-card"><img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=300" alt="R3"><p>Royal Oak</p></div>
-            <div class="related-card"><img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=300" alt="R4"><p>Nautilus</p></div>
-        </div>
-    </section>
+        if (!slides || slides.length === 0) return;
 
-    <!-- SECCIÓN: HISTORIA, LÍNEA DE TIEMPO Y GALERÍA MOSAICO -->
-    <section id="historia" class="container bg-light">
-        <h2 class="section-title">Historia & Trayectoria Corporativa</h2>
-        
-        <div class="timeline-container">
-            <div class="time-box">
-                <span class="year">2010</span>
-                <h4>Origen & Fundación</h4>
-                <p>Nace la boutique ofreciendo piezas exclusivas en el mercado internacional.</p>
-            </div>
-            <div class="time-box">
-                <span class="year">2016</span>
-                <h4>Certificaciones</h4>
-                <p>Acreditación de inspección técnica oficial de autenticidad en Suiza.</p>
-            </div>
-            <div class="time-box">
-                <span class="year">2021</span>
-                <h4>Expansión de Sedes</h4>
-                <p>Apertura de showrooms privados en Bogotá y Miami.</p>
-            </div>
-            <div class="time-box">
-                <span class="year">2026</span>
-                <h4>Innovación Digital</h4>
-                <p>Lanzamiento de plataforma con experiencia interactiva para coleccionistas.</p>
-            </div>
-        </div>
+        // Ajuste cíclico de índice
+        if (index >= slides.length) { slideIndex = 0; }
+        else if (index < 0) { slideIndex = slides.length - 1; }
+        else { slideIndex = index; }
 
-        <!-- Galería visual estilo mosaico -->
-        <h3 class="sub-section-title">Galería Visual Histórica</h3>
-        <div class="mosaic-gallery">
-            <div class="mosaic-item item-large"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600" alt="Taller"></div>
-            <div class="mosaic-item"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400" alt="Relojero"></div>
-            <div class="mosaic-item"><img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400" alt="Detalle"></div>
-            <div class="mosaic-item item-wide"><img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=600" alt="Sede"></div>
-        </div>
-    </section>
+        // Ocultar todas las diapositivas
+        slides.forEach(slide => {
+            slide.classList.remove('active');
+            slide.style.opacity = '0';
+            slide.style.zIndex = '0';
+        });
 
-    <!-- SECCIÓN: FORMULARIO DE CONTACTO CON VALIDACIÓN CSS -->
-    <section id="contacto" class="container">
-        <h2 class="section-title">Formulario de Contacto Directo</h2>
-        <div class="contact-wrapper">
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="nombre">Nombre Completo *</label>
-                    <input type="text" id="nombre" required placeholder="Ej: Daniel Figueroa">
-                </div>
-                <div class="form-group">
-                    <label for="correo">Correo Electrónico *</label>
-                    <input type="email" id="correo" required placeholder="ejemplo@correo.com">
-                </div>
-                <div class="form-group">
-                    <label for="telefono">Teléfono *</label>
-                    <input type="tel" id="telefono" required placeholder="+57 300 123 4567">
-                </div>
-                <div class="form-group">
-                    <label for="mensaje">Mensaje *</label>
-                    <textarea id="mensaje" rows="4" required placeholder="Escribe tu consulta sobre disponibilidad o citas..."></textarea>
-                </div>
-                <button type="submit" class="btn-primary">ENVIAR MENSAJE</button>
-            </form>
+        dots.forEach(dot => dot.classList.remove('active'));
 
-            <div class="contact-info">
-                <h3>Información Adicional</h3>
-                <p><strong>Correo Directo:</strong> contacto@luxtime.com</p>
-                <p><strong>Teléfono Directo:</strong> +57 (601) 800-5898</p>
-                <p><strong>Sedes:</strong> San Gil • Bogotá • Miami</p>
-                <div class="social-links">
-                    <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">YouTube</a>
-                </div>
-            </div>
-        </div>
-    </section>
+        // Mostrar la activa
+        slides[slideIndex].classList.add('active');
+        slides[slideIndex].style.opacity = '1';
+        slides[slideIndex].style.zIndex = '1';
 
-    <!-- FOOTER EXIGIDO (MAQUETADO ESTRICTAMENTE CON FLEXBOX) -->
-    <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-item">
-                <strong>LuxTime</strong>
-            </div>
-            <div class="footer-item">
-                © 2026 LuxTime Timepieces. Todos los derechos reservados.
-            </div>
-            <div class="footer-item">
-                Contacto: <a href="mailto:info@luxtime.com">info@luxtime.com</a>
-            </div>
-            <div class="footer-item">
-                Desarrollado por: <a href="#">Equipo Dev LuxTime</a>
-            </div>
-        </div>
-    </footer>
+        if (dots[slideIndex]) {
+            dots[slideIndex].classList.add('active');
+        }
+    }
+
+    function moveSlide(n) {
+        resetTimer();
+        showSlide(slideIndex + n);
+    }
+
+    function currentSlide(n) {
+        resetTimer();
+        showSlide(n);
+    }
+
+    function startAutoSlide() {
+        if (autoSlideTimer) clearInterval(autoSlideTimer);
+        autoSlideTimer = setInterval(() => {
+            showSlide(slideIndex + 1);
+        }, 4000); // Cambia cada 4 segundos
+    }
+
+    function resetTimer() {
+        clearInterval(autoSlideTimer);
+        startAutoSlide();
+    }
+
+    // Inicializar carrusel
+    document.addEventListener('DOMContentLoaded', () => {
+        showSlide(0);
+        startAutoSlide();
+    });
+</script>
 
 </body>
 </html>
-/* ESTILO ENCABEZADO EXCLUSIVO PÁGINA CATÁLOGO */
-.catalog-hero {
-    background-color: #111111;
-    color: #ffffff;
-    text-align: center;
-    padding: 3rem 5%;
-}
-
-.catalog-hero h1 {
-    font-size: 2.2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-.catalog-hero p {
-    color: #e63946;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-}

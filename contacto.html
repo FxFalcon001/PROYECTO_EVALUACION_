@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | LuxTime</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR PRINCIPAL -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">❖</span> LuxTime
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="index.html#destacados">DESTACADOS</a></li>
+                <li class="dropdown">
+                    <a href="catalogo.html" class="dropbtn">CATÁLOGO (20) ▾</a>
+                    <div class="dropdown-content">
+                        <a href="catalogo.html" class="btn-dropdown">VER COLECCIÓN</a>
+                        <a href="catalogo.html">Ver Disponibles</a>
+                        <a href="catalogo.html">Agotados</a>
+                    </div>
+                </li>
+                <li><a href="historia.html">HISTORIA</a></li>
+                <li><a href="contacto.html" class="active">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BANNER DE ENCABEZADO -->
+    <section class="about-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('./GMT Master Rose.png'); background-size: cover; background-position: center;">
+        <div class="about-hero-content">
+            <span class="hero-subtitle">ATENCIÓN EXCLUSIVA & CONSULTAS VIP</span>
+            <h1>PONTÉ EN CONTACTO</h1>
+            <p>Asesoramiento personalizado para adquisición, venta o valuación de alta horología.</p>
+        </div>
+    </section>
+
+    <!-- CONTENIDO DE CONTACTO -->
+    <section class="contact-container">
+        <div class="contact-grid">
+            
+            <!-- INFORMACIÓN DE CONTACTO (CRM JEWELERS) -->
+            <div class="contact-info">
+                <h2>BOUTIQUE & SHOWROOM</h2>
+                <p>Nuestros especialistas están listos para asistirte en la compra o consignación de piezas de colección con absoluta confidencialidad y garantía.</p>
+
+                <div class="info-card">
+                    <div class="info-item">
+                        <h4>UBICACIÓN & SHOWROOM</h4>
+                        <p>CRM Jewelers<br>58 NE 1st St, Suite 201<br>Miami, FL 33132, EE. UU.</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>TELÉFONO & WHATSAPP DIRECTO</h4>
+                        <p><a href="tel:+13053795333">+1 (305) 379-5333</a></p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>CORREO ELECTRÓNICO</h4>
+                        <p><a href="mailto:info@crmjewelers.com">info@crmjewelers.com</a></p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>HORARIO DE ATENCIÓN</h4>
+                        <p>Lunes a Viernes: 10:00 AM – 5:30 PM (EST)<br>Sábados y Domingos: Cerrado</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FORMULARIO DE CONSULTA PRIVADA -->
+            <div class="contact-form-wrapper">
+                <h2>SOLICITAR ASESORÍA O CITA</h2>
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Gracias por tu mensaje. Un asesor VIP de LuxTime se pondrá en contacto contigo a la brevedad.');">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" placeholder="Ej. Carlos Mendoza" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono / WhatsApp</label>
+                        <input type="tel" id="telefono" placeholder="+1 305 000 0000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">Interés Principal</label>
+                        <select id="asunto">
+                            <option value="compra">Adquisición de una pieza</option>
+                            <option value="venta">Venta o Consignación</option>
+                            <option value="valuacion">Valuación y Autenticidad</option>
+                            <option value="otro">Consulta general</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" rows="4" placeholder="Detalla la referencia o consulta que deseas realizar..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">ENVIAR CONSULTA PRIVADA</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 LuxTime Luxury Watch & Jewelry. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
